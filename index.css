@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: #1D2021;
+  font-family: monospace;
+  color: #EBDAB4;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.body > * {
+  flex: 1;
+}
+
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+  }
+}
+
+#insts {
+  width: 100%;
+  height: 100%;
+  font-family: monospace;
+}
+
+#insts p {
+  margin: 0;
+}
+
+#insts p:hover {
+  background: #3C3836;
+}
+
+.header {
+  padding: 15px 10px;
+}
+
+.lvl-1 {
+  position: absolute;
+  background: rgba(255,255,255,0.2);
+}
+
+.lvl-2 {
+  position: absolute;
+  background: rgba(255,255,0,0.3);
+}
+
+.lvl-3 {
+  position: absolute;
+  background: rgba(255,0,0,0.3);
+}
